@@ -10,11 +10,17 @@ Each new search will refresh tab
 each time account is selected it will generate new view in Cofigurations and Policies tabs
 
 ########## Cofigurations ##########
+
 ########## Policies ##########
+
 ########## Hostnames ##########
+
 ########## Host table ##########
+
 ########## WAF Test ##########
+
 ########## RC Tester ##########
+
 ########## Updates ##########
 
 Latest added Feature:
@@ -25,6 +31,7 @@ Latest added Feature:
 ALL Hostnames
 
 ########## prerequisites ##########
+
 Must have active API credentials. To create API credentials go:
 Control Center -> search for "Akamai Technologies - Assets" account ->
 navigate to Identity & access -> Create API client
@@ -48,6 +55,7 @@ more info can be found on tehcdocs:
 https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials
 
 ########## How to Install and Run script - MAC users ##########
+
 option 1:
 Open install.command with terminal (Terminal should be default selection)
           if not: 
@@ -69,4 +77,5 @@ run command:
 - it will run the script
 
 ########## How to Install and Run script - Windows users ##########
+
 TBD
