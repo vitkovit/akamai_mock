@@ -2,6 +2,7 @@
 
 
 ########## Search ##########
+
 Search for customer account 
 Error will pop up if there is no security configuration evailable
 Copy "account ID" together with "Contract Type Id" which basicaly forms "Switch Key"
