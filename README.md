@@ -1,12 +1,16 @@
 # Akamai Multi Tool
 
 ## Prerequisites 
-* Active API credentials. To create API credentials, go to Control Center -> search for "Akamai Technologies - Assets" account -> navigate to Identity & access -> Create API client.
+* Active API credentials. To create API credentials, go to:<br>
+Control Center -> search for "Akamai Technologies - Assets" account -> navigate to Identity & access -> Create API client.
 
-Once you have proper credentials, make sure you have a `.edgerc` file located at `~/.edgerc` on MAC and edit the file with your API credentials.
+Once you have proper credentials, make sure you have a `.edgerc` and edit the file with your API credentials.<br>
+**Linux** /home/{username}/.edgerc<br>
+**macOS** /Users/{username}/.edgerc (~/.edgerc)<br>
+**Windows** C:\Users\{username}\.edgerc<br>
 
-_Example of .edgerc file_
-[default]
+_Example of .edgerc file_<br>
+[default]<br>
 client_secret = xxxxxxxxxxxxxxxxxxx<br>
 host = akab-xxxxxxxxxxxxxxxxxxx<br>
 access_token = akab-xxxxxxxxxxxxxxxxxxx<br>
@@ -15,28 +19,32 @@ client_token = akab-xxxxxxxxxxxxxxxxxxx<br>
 If you use a different API Section, make sure you change the content of the `version.py` file - modify variable `__apisection__` to the name of your API Section.
 
 More info can be found on the techdocs.
+[TechDocs](https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials)
+
 
 ## How to Install and Run script - MAC users 
 ### Option 1:
-Open `install.command` with terminal (Terminal should be default selection). If not: click on file -> Open With -> Other… -> Applications -> Utilities (scroll to the bottom of screen) -> Enable: All Applications -> Terminal
+Open `install.command` with terminal (Terminal should be default selection). If not:<br>
+two finger click on file -> Open With -> Other… -> Applications -> Utilities (scroll to the bottom of screen) -> Enable: All Applications -> Terminal (set as default)
 
 This will:
 - Install brew and python3.11 if not present.
-- Add execute flag to `run.sh` and `Akamai Multitool.command`.
+- Add execute flag to `run.sh` and `main.py`.
 - Create a virtual environment in local folder, activate it and download necessary libraries.
-- The script will always run in virtual environment until it is deleted.
+- The script will always run in virtual environment until 'venv' folder it is deleted.
 - After installation, the application can be started by double clicking on `run.sh`.
 - To remove the script, simply delete the whole folder.
 
 ### Option 2:
-Open terminal and run command:  
-> make install
-This will install all dependencies and create a virtual environment.
-> make run
+Open terminal and run command:<br>
+`> make install`<br>
+This will install all dependencies and create a virtual environment.<br>
+`> make run`<br>
 This will run the script.
 
 ## How to Install and Run script - Windows users 
-TBD
+TBD 
+Make file is not native to Windows
 
 ## Tabs Functionalities 
 ### Search
@@ -88,5 +96,5 @@ Script has local file named version.py where you can see current version of scri
 - Option to comment out existing host entries.
 - Search hostnames in API match target.
 - Listing exceptions from WAF rules.
-- .edgerc file can now be read from windows and mac.
+- `.edgerc` file can now be read from windows and mac.
 - Use of local certificate to check internal git raw files.
