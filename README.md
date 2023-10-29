@@ -1,5 +1,3 @@
-# Akamai Multi Tool
-
 ## Prerequisites 
 * Active API credentials. To create API credentials, go to:<br>
 Control Center -> search for "Akamai Technologies - Assets" account -> navigate to Identity & access -> Create API client.
@@ -48,7 +46,7 @@ Make file is not native to Windows
 
 ## Tabs Functionalities 
 ### Search
-* Search for customer account. An error will pop up if there is no security configuration available.
+Search for customer account. An error will pop up if there is no security configuration available.
 * Copy "account ID" together with "Contract Type Id" which basically forms "Switch Key".
 * Each new search will refresh tab.
 * Each time an account is selected it will generate a new view in Configurations and Policies tabs.
@@ -60,11 +58,12 @@ Lists all configurations for selected account.
 * Tab will be refreshed if new customer account is selected.
 
 ### Policies
-Displays all policies after List Policies is selected.
+Lists all policies after List Policies is selected.
 * List hostnames will display all hostnames in Hostnames tab.
 
 ### Hostnames
-Displays all hostnames from selected Security Policy. Provides option to Select/Unselect All. Selected hostname will show up in WAF Test tab in drop down menu.
+Lists all hostnames from selected Security Policy. 
+* Provides option to Select/Unselect All. Selected hostname will show up in WAF Test tab in drop down menu.
 * Check Live will send ping request to each selected hostname by sending 3 ping requests (uses multithreading to complete task faster).
 * Check Edge will use nslookup tool to check if hostname is on Akamai platform by searching keyword "akamai" in CNAME. It checks hostname by adding edgekey and edgesuite suffixes to nslookup.
 * Set staging - TBD
@@ -77,24 +76,39 @@ Internal tool that helps manage local host table. Modify local host table by add
 * nslookup tool is built in tool to help resolve hostnames on the spot. 
 
 ### WAF Test 
-Sends basic attack traffic to selected hostnames. One hostname at a time can be selected. Toggle between HTTP and HTTPS. When ready Send Test will send Attack simulated traffic to hostname. Open WSA will open WSA link with multi dimension filter and public IP in main filter. Suggestion is to use VPN when testing traffic.
+Sends basic attack traffic to selected hostnames. 
+* One hostname at a time can be selected. 
+* Toggle between HTTP and HTTPS. 
+* When ready Send Test will send Attack simulated traffic to hostname.
+* Open WSA will open WSA link with multi dimension filter and public IP in main filter. 
+* Suggestion is to use VPN when testing traffic.
 
 ### RC Tester 
-Test Rate Control for entered hostname. Enter just host in first field and select HTTP or HTTPS protocol. Path is optional, if not entered it will use root path. Number of Requests will send up to 100 requests at once, it will open n number of threads. Number of Seconds will send n number of requests each second. Possible to select other HTTP Methods Send will count down number of seconds - backend tool will need to finish the job first, then it will start countdown.
+Test Rate Control for entered hostname. 
+* Enter just host in first field and select HTTP or HTTPS protocol. 
+* Path is optional, if not entered it will use root path. 
+* Number of Requests will send up to 100 requests at once, it will open n number of threads.
+* Number of Seconds will send n number of requests each second. 
+* Possible to select other HTTP Methods Send will count down number of seconds - backend tool will need to finish the job first, then it will start countdown.
+* status code will show for set of reqeusts in each second
 
 ## Updates 
-Script has local file named version.py where you can see current version of script. When new version is available on Git it will compare local version with remote version. Download will open browser and allow to download script from git in zip format. View Ready is what is done now.
+Script has local file named version.py where you can see current version of script.<br>
+When new version is available on Git it will compare local version with remote version.<br>
+Download will open browser and allow to download script from git in zip format.<br>
+View Ready is what is done now.
+
 
 ## Latest added Feature:
-- Copy button for each switch key.
-- Error popup if there is no available security configuration.
-- Host table now supports simple nslookup tool to avoid use of native console.
-- Listing hostname will check all hostname with policy option: Hostnames ALL Hostnames.
+* Copy button for each switch key.
+* Error popup if there is no available security configuration.
+* Host table now supports simple nslookup tool to avoid use of native console.
+* Listing hostname will check all hostname with policy option: Hostnames ALL Hostnames.
 
 ## Upcoming fixes and features 
-- Automatically adding staging to host table.
-- Option to comment out existing host entries.
-- Search hostnames in API match target.
-- Listing exceptions from WAF rules.
-- `.edgerc` file can now be read from windows and mac.
-- Use of local certificate to check internal git raw files.
+* Automatically adding staging to host table.
+* Option to comment out existing host entries.
+* Search hostnames in API match target.
+* Listing exceptions from WAF rules.
+* `.edgerc` file can now be read from windows and mac.
+* Use of local certificate to check internal git raw files.
