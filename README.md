@@ -16,8 +16,7 @@ client_token = akab-xxxxxxxxxxxxxxxxxxx<br>
 
 If you use a different API Section, make sure you change the content of the `version.py` file - modify variable `__apisection__` to the name of your API Section.
 
-More info can be found on the techdocs.
-[TechDocs](https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials)
+More info can be found on [TechDocs](https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials)
 
 
 ## How to Install and Run script - MAC users 
