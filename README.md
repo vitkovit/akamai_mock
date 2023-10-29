@@ -1,7 +1,7 @@
-# GUI_propery_creator
+# Akamai Multi Tool
 
 ## Search
-Search for customer account 
+* Search for customer account 
 Error will pop up if there is no security configuration available
 Copy "account ID" together with "Contract Type Id" which basically forms "Switch Key"
 Each new search will refresh tab.
