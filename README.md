@@ -1,6 +1,6 @@
 # Akamai Multi Tool
 
-## Search
+### Search
 * Search for customer account 
 Error will pop up if there is no security configuration available
 Copy "account ID" together with "Contract Type Id" which basically forms "Switch Key"
