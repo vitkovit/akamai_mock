@@ -5,12 +5,12 @@
 
 Once you have proper credentials, make sure you have a `.edgerc` file located at `~/.edgerc` on MAC and edit the file with your API credentials.
 
---- Example of .edgerc file ----
+_Example of .edgerc file_
 [default]
-client_secret = xxxxxxxxxxxxxxxxxxx
-host = akab-xxxxxxxxxxxxxxxxxxx
-access_token = akab-xxxxxxxxxxxxxxxxxxx
-client_token = akab-xxxxxxxxxxxxxxxxxxx
+client_secret = xxxxxxxxxxxxxxxxxxx<br>
+host = akab-xxxxxxxxxxxxxxxxxxx<br>
+access_token = akab-xxxxxxxxxxxxxxxxxxx<br>
+client_token = akab-xxxxxxxxxxxxxxxxxxx<br>
 
 If you use a different API Section, make sure you change the content of the `version.py` file - modify variable `__apisection__` to the name of your API Section.
 
