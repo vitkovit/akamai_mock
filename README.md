@@ -1,5 +1,30 @@
 # Akamai Multi Tool
 
+## Prerequisites 
+* active API credentials. To create API credentials, go:
+*adadad*
+Control Center -> search for "Akamai Technologies - Assets" account ->
+navigate to Identity & access -> Create API client.
+
+Once you have proper credentials, make sure you have .edgerc file
+
+File location on MAC: ~/.edgerc
+
+edit file with API credentials:
+--- Example of .edgerc file ----
+[default]
+client_secret = xxxxxxxxxxxxxxxxxxx
+host = akab-xxxxxxxxxxxxxxxxxxx
+access_token = akab-xxxxxxxxxxxxxxxxxxx
+client_token = akab-xxxxxxxxxxxxxxxxxxx
+
+if you use different API Section, make sure you change content of version.py file
+- modify variable __apisection__ to the name of your API Section
+
+more info can be found on tehcdocs:
+https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials
+
+## Tabs Functionalities 
 ### Search
 * Search for customer account 
 Error will pop up if there is no security configuration available
@@ -68,28 +93,7 @@ View Ready is what is done now.
 - listing hostname will check all hostname with policy option: Hostnames
 ALL Hostnames
 
-## prerequisites 
-Must have active API credentials. To create API credentials, go:
-Control Center -> search for "Akamai Technologies - Assets" account ->
-navigate to Identity & access -> Create API client.
 
-Once you have proper credentials, make sure you have .edgerc file
-
-File location on MAC: ~/.edgerc
-
-edit file with API credentials:
---- Example of .edgerc file ----
-[default]
-client_secret = xxxxxxxxxxxxxxxxxxx
-host = akab-xxxxxxxxxxxxxxxxxxx
-access_token = akab-xxxxxxxxxxxxxxxxxxx
-client_token = akab-xxxxxxxxxxxxxxxxxxx
-
-if you use different API Section, make sure you change content of version.py file
-- modify variable __apisection__ to the name of your API Section
-
-more info can be found on tehcdocs:
-https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials
 
 ## How to Install and Run script - MAC users 
 option 1:
