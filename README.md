@@ -24,13 +24,13 @@ More info can be found on  [TechDocs](https://techdocs.akamai.com/developer/docs
 Open _install.command_ with terminal (Terminal should be default selection). If not:<br>
 two finger click on file -> Open With -> Other… -> Applications -> Utilities (scroll to the bottom of screen) -> Enable: All Applications -> Terminal (set as default)
 
-This will:
-* Install brew and python3.11 if not present.
-* Add execute flag to _run.sh_ and _main.py_.
-* Create a virtual environment in local folder, activate it and download necessary libraries.
-* The script will always run in virtual environment until 'venv' folder it is deleted.
-* After installation, the application can be started by double clicking on _run.sh_.
-* To remove the script, simply delete the whole folder.
+This will:<br>
+* Install brew and python3.11 if not present.<br>
+* Add execute flag to _run.sh_ and _main.py_.<br>
+* Create a virtual environment in local folder, activate it and download necessary libraries.<br>
+* The script will always run in virtual environment until 'venv' folder it is deleted.<br>
+* After installation, the application can be started by double clicking on _run.sh_.<br>
+* To remove the script, simply delete the whole folder.<br>
 
 ### Option 2:
 Open terminal and run command:<br>
