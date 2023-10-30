@@ -2,12 +2,12 @@
 * Active API credentials. To create API credentials, go to:<br>
 Control Center -> search for "Akamai Technologies - Assets" account -> navigate to Identity & access -> Create API client.
 
-Once you have proper credentials, make sure you have a `.edgerc` and edit the file with your API credentials.<br>
-**Linux** /home/{username}/.edgerc<br>
-**macOS** /Users/{username}/.edgerc (~/.edgerc)<br>
-**Windows** C:\Users\{username}\.edgerc<br>
+Once you have proper credentials, make sure you have a `edgerc` and edit the file with your API credentials.<br>
+**Linux** /home/{username}/edgerc<br>
+**macOS** /Users/{username}/edgerc (~/edgerc)<br>
+**Windows** C:\Users\{username}\edgerc<br>
 
-_Example of .edgerc file_<br>
+_Example of edgerc file_<br>
 [default]<br>
 client_secret = xxxxxxxxxxxxxxxxxxx<br>
 host = akab-xxxxxxxxxxxxxxxxxxx<br>
@@ -109,5 +109,5 @@ View Ready is what is done now.
 * Option to comment out existing host entries.
 * Search hostnames in API match target.
 * Listing exceptions from WAF rules.
-* `.edgerc` file can now be read from windows and mac.
+* `edgerc` file can now be read from windows and mac.
 * Use of local certificate to check internal git raw files.
