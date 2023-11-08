@@ -1,4 +1,4 @@
-__version__ = "0.0.3"
+__version__ = "0.1.0"
 __owner__ = "vitkovit"
 __repo__ = "akamai_mock"
 __branch__ = "main"
