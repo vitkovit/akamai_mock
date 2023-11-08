@@ -1,12 +1,6 @@
-### Fixes & features:
-- _edgerc_ file can now be read from windows and mac.<br>
-- Host table - each new entry is now written between the same tags, if new entry is added it will check existence in current hosts table, commenting existing entry is possible by adding '#' in front of entry value.<br>
-- Configurations tab title misspell is fixed.<br>
-- _install.command_ file now works even if there is empty spaces in script path
-- under Policies tab 'check hostnames’ button now check hostnames in API
-- added button shortcut to open ACC at configuration level from Configurations tab
-- added button shortcut to open ACC at policy level from Policies tab
-- releases explained
+### Fixes & features: 
+#### __version__ 0.1.1
+- The "Oper ACC" buttons, located under the Configurations and Policies sections, are designed to open ACC. Upon clicking, the first tab of your web browser will display the homepage, followed by the ACC configuration and Policy pages respectively..<br>
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
@@ -127,9 +121,21 @@ Test Rate Control for entered hostname.<br>
 ### KNOWN BUGS:
 - version lookup can't be done from local git repo due to certificate need<br>
 - Download can't automaticaly open local download location due to certificate need, instead it will open browser session<br>
+- The "Open ACC" command is designed to initiate the opening of two separate tabs in your web browser. Please note that due to certain limitations, direct redirection via the script is not possible.<br>
 
 ### Releases explained
 The versioning of this tool follows the format ____version____ = "x.y.z", where:<br>
 - **x**: This number changes when a new tab is added to the tool or when there are significant changes. This represents major versions.<br>
 - **y**: This number increases when the tool is reorganized or a new tool is added to the existing tool. This represents minor versions.<br>
 - **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
+
+### Changelog 
+#### __version__ 0.1.0
+- _edgerc_ file can now be read from windows and mac.<br>
+- Host table - each neW entry is now written between the same tags, if new entry is added it will check existence in current hosts table, commenting existing entry is possible by adding '#' in front of entry value.<br>
+- Configurations tab title misspell is fixed.<br>
+- _install.command_ file now works even if there is empty spaces in script path<br>
+- under Policies tab 'check hostnames’ button now check hostnames in API<br>
+- added button shortcut to open ACC at configuration level from Configurations tab<br>
+- added button shortcut to open ACC at policy level from Policies tab<br>
+- releases explained<br>
