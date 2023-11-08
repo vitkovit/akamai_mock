@@ -1,6 +1,6 @@
 ### Fixes & features:
 - _edgerc_ file can now be read from windows and mac.<br>
-- Host table - each neW entry is now written between the same tags, if new entry is added it will check existence in current hosts table, commenting existing entry is possible by adding '#' in front of entry value.<br>
+- Host table - each new entry is now written between the same tags, if new entry is added it will check existence in current hosts table, commenting existing entry is possible by adding '#' in front of entry value.<br>
 - Configurations tab title misspell is fixed.<br>
 - _install.command_ file now works even if there is empty spaces in script path
 - under Policies tab 'check hostnames’ button now check hostnames in API
