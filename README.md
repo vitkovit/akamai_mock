@@ -1,3 +1,13 @@
+### Fixes & features:
+- _edgerc_ file can now be read from windows and mac.<br>
+- Host table - each neW entry is now written between the same tags, if new entry is added it will check existence in current hosts table, commenting existing entry is possible by adding '#' in front of entry value.<br>
+- Configurations tab title misspell is fixed.<br>
+- _install.command_ file now works even if there is empty spaces in script path
+- under Policies tab 'check hostnames’ button now check hostnames in API
+- added button shortcut to open ACC at configuration level from Configurations tab
+- added button shortcut to open ACC at policy level from Policies tab
+- releases explained
+
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
 Control Center -> search for "Akamai Technologies - Assets" account -> navigate to Identity & access -> Create API client.
@@ -92,11 +102,10 @@ Test Rate Control for entered hostname.<br>
 * status code will show for set of reqeusts in each second<br>
 
 ## Updates 
-Script has local file named version.py where you can see current version of script.<br>
-When new version is available on Git it will compare local version with remote version.<br>
-Download will open browser and allow to download script from git in zip format.<br>
-View Ready is what is done now.
-
+* Script has local file named version.py where you can see current version of script.<br>
+* When new version is available on Git it will compare local version with remote version.<br>
+* Download will open browser and allow to download script from git in zip format.<br>
+* View Ready is what is done now.<br>
 
 ## Latest added Feature:
 * Copy button for each switch key.<br>
@@ -106,9 +115,21 @@ View Ready is what is done now.
 
 ## Upcoming fixes and features 
 * Automatically adding staging to host table.<br>
-* Option to comment out existing host entries.<br>
 * Search hostnames in API match target.<br>
 * Listing exceptions from WAF rules.<br>
-* _edgerc_ file can now be read from windows and mac.<br>
 * Use of local certificate to check internal git raw files.<br>
 * check hostname in property, when Hostnames tab tools failed.<br>
+* add Bot test tool<br>
+* add pragma headers option<br>
+* add options for pragma headers<br>
+* Adding quick SiteShield updates check<br>
+
+### KNOWN BUGS:
+- version lookup can't be done from local git repo due to certificate need<br>
+- Download can't automaticaly open local download location due to certificate need, instead it will open browser session<br>
+
+### Releases explained
+The versioning of this tool follows the format ____version____ = "x.y.z", where:<br>
+- **x**: This number changes when a new tab is added to the tool or when there are significant changes. This represents major versions.<br>
+- **y**: This number increases when the tool is reorganized or a new tool is added to the existing tool. This represents minor versions.<br>
+- **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
