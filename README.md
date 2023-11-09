@@ -1,6 +1,8 @@
 ### Fixes & features: 
-#### __version__ 0.1.1
-- The "Oper ACC" buttons, located under the Configurations and Policies sections, are designed to open ACC. Upon clicking, the first tab of your web browser will display the homepage, followed by the ACC configuration and Policy pages respectively..<br>
+#### __version__ 0.1.2
+- fixed issue when Rate Control Policy does not have a name in latest version.<br>
+- Host table will now automatically Display Hosts File.<br>
+- Host table nslookup tool is rearranged for more intuitive use.<br>
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
@@ -21,7 +23,6 @@ client_token = akab-xxxxxxxxxxxxxxxxxxx<br>
 If you use a different API Section, make sure you change the content of the _version.py_ file - modify variable ___apisection___ to the name of your API Section.
 
 More info can be found on  [TechDocs](https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials)
-
 
 ## How to Install and Run script - MAC users 
 ### Option 1:
@@ -107,16 +108,18 @@ Test Rate Control for entered hostname.<br>
 * Host table now supports simple nslookup tool to avoid use of native console.<br>
 * Listing hostname will check all hostname with policy option: Hostnames ALL Hostnames.<br>
 
-## Upcoming fixes and features 
+## Upcoming fixes and features
+* Selecting from which version and what policy when pressing "Analyze RC" 
 * Automatically adding staging to host table.<br>
 * Search hostnames in API match target.<br>
 * Listing exceptions from WAF rules.<br>
 * Use of local certificate to check internal git raw files.<br>
 * check hostname in property, when Hostnames tab tools failed.<br>
-* add Bot test tool<br>
-* add pragma headers option<br>
-* add options for pragma headers<br>
-* Adding quick SiteShield updates check<br>
+* add Bot test tool.<br>
+* add options for pragma headers.<br>
+* Adding quick SiteShield updates check.<br>
+* Fixed color when user do not use Dark Mode in OS.<br>
+* nslookup tools is broken when it listing too many configurations.<br>
 
 ### KNOWN BUGS:
 - version lookup can't be done from local git repo due to certificate need<br>
@@ -129,7 +132,9 @@ The versioning of this tool follows the format ____version____ = "x.y.z", where:
 - **y**: This number increases when the tool is reorganized or a new tool is added to the existing tool. This represents minor versions.<br>
 - **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
 
-### Changelog 
+### Changelog
+#### __version__ 0.1.1
+- The "Oper ACC" buttons, located under the Configurations and Policies sections, are designed to open ACC. Upon clicking, the first tab of your web browser will display the homepage, followed by the ACC configuration and Policy pages respectively.<br>
 #### __version__ 0.1.0
 - _edgerc_ file can now be read from windows and mac.<br>
 - Host table - each neW entry is now written between the same tags, if new entry is added it will check existence in current hosts table, commenting existing entry is possible by adding '#' in front of entry value.<br>
