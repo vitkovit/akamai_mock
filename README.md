@@ -1,8 +1,11 @@
 ### Fixes & features: 
-#### __version__ 0.1.2
-- fixed issue when Rate Control Policy does not have a name in latest version.<br>
-- Host table will now automatically Display Hosts File.<br>
-- Host table nslookup tool is rearranged for more intuitive use.<br>
+#### __version__ 0.2.0
+- Two new features have been introduced to the Analyze RC:.<br>
+  - A selection window will appear if there are more than 50 versions, allowing you to choose the starting version for analysis..<br>
+  - If there are more than 5 Rate Control policies, you will be able to select which one to analyze in a new window.<br>
+- Hostnames tab now have __Check Property Hostname__ option, it will list productionCnameTo from all hostnames for an account.<br>
+- Configurations tab now shows the latest version number.<br>
+- Hostnames tab presents a sorted list of hostnames.<br>
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
@@ -109,16 +112,16 @@ Test Rate Control for entered hostname.<br>
 * Listing hostname will check all hostname with policy option: Hostnames ALL Hostnames.<br>
 
 ## Upcoming fixes and features
-* Selecting from which version and what policy when pressing "Analyze RC" 
+~~* Selecting from which version and what policy when pressing "Analyze RC".~~<br>
 * Automatically adding staging to host table.<br>
-* Search hostnames in API match target.<br>
+~~* Search hostnames in API match target.~~<br>
 * Listing exceptions from WAF rules.<br>
 * Use of local certificate to check internal git raw files.<br>
-* check hostname in property, when Hostnames tab tools failed.<br>
+~~* check hostname in property, when Hostnames tab tools failed.~~<br>
 * add Bot test tool.<br>
 * add options for pragma headers.<br>
 * Adding quick SiteShield updates check.<br>
-* Fixed color when user do not use Dark Mode in OS.<br>
+~~* Fixed color when user do not use Dark Mode in OS.~~<br>
 * nslookup tools is broken when it listing too many configurations.<br>
 
 ### KNOWN BUGS:
@@ -133,6 +136,10 @@ The versioning of this tool follows the format ____version____ = "x.y.z", where:
 - **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
 
 ### Changelog
+#### __version__ 0.1.2
+- fixed issue when Rate Control Policy does not have a name in latest version.<br>
+- Host table will now automatically Display Hosts File.<br>
+- Host table nslookup tool is rearranged for more intuitive use.<br>
 #### __version__ 0.1.1
 - The "Oper ACC" buttons, located under the Configurations and Policies sections, are designed to open ACC. Upon clicking, the first tab of your web browser will display the homepage, followed by the ACC configuration and Policy pages respectively.<br>
 #### __version__ 0.1.0
