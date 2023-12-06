@@ -6,7 +6,7 @@
 - Hostnames tab now have __Check Property Hostname__ option, it will list productionCnameTo from all hostnames for an account.<br>
 - Configurations tab now shows the latest version number.<br>
 - Hostnames tab presents a sorted list of hostnames.<br>
-- View Readme is showind proper HTML format
+- View Readme is showing proper HTML format
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
