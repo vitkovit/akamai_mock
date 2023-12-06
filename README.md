@@ -1,11 +1,12 @@
 ### Fixes & features: 
-#### __version__ 0.2.0
+#### __version__ 0.2.1
 - Two new features have been introduced to the Analyze RC:.<br>
   - A selection window will appear if there are more than 50 versions, allowing you to choose the starting version for analysis..<br>
   - If there are more than 5 Rate Control policies, you will be able to select which one to analyze in a new window.<br>
 - Hostnames tab now have __Check Property Hostname__ option, it will list productionCnameTo from all hostnames for an account.<br>
 - Configurations tab now shows the latest version number.<br>
 - Hostnames tab presents a sorted list of hostnames.<br>
+- View Readme is showind proper HTML format
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
@@ -136,6 +137,13 @@ The versioning of this tool follows the format ____version____ = "x.y.z", where:
 - **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
 
 ### Changelog
+#### __version__ 0.2.0
+- Two new features have been introduced to the Analyze RC:.<br>
+  - A selection window will appear if there are more than 50 versions, allowing you to choose the starting version for analysis..<br>
+  - If there are more than 5 Rate Control policies, you will be able to select which one to analyze in a new window.<br>
+- Hostnames tab now have __Check Property Hostname__ option, it will list productionCnameTo from all hostnames for an account.<br>
+- Configurations tab now shows the latest version number.<br>
+- Hostnames tab presents a sorted list of hostnames.<br>
 #### __version__ 0.1.2
 - fixed issue when Rate Control Policy does not have a name in latest version.<br>
 - Host table will now automatically Display Hosts File.<br>
