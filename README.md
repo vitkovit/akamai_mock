@@ -110,16 +110,16 @@ Test Rate Control for entered hostname.<br>
 * Listing hostname will check all hostname with policy option: Hostnames ALL Hostnames.<br>
 
 ## Upcoming fixes and features
-~~* Selecting from which version and what policy when pressing "Analyze RC".~~<br>
-~~* Automatically adding staging to host table.~~<br>
-~~* Search hostnames in API match target.~~<br>
+* ~~Selecting from which version and what policy when pressing "Analyze RC".~~<br>
+* ~~Automatically adding staging to host table.~~<br>
+* ~~Search hostnames in API match target.~~<br>
 * Listing exceptions from WAF rules.<br>
 * Use of local certificate to check internal git raw files.<br>
-~~* check hostname in property, when Hostnames tab tools failed.~~<br>
+* ~~check hostname in property, when Hostnames tab tools failed.~~<br>
 * add Bot test tool.<br>
 * add options for pragma headers.<br>
 * Adding quick SiteShield updates check.<br>
-~~* Fixed color when user do not use Dark Mode in OS.~~<br>
+* ~~Fixed color when user do not use Dark Mode in OS.~~<br>
 * nslookup tools is broken when it listing too many configurations.<br>
 
 ### KNOWN BUGS:
