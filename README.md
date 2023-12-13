@@ -111,7 +111,7 @@ Test Rate Control for entered hostname.<br>
 
 ## Upcoming fixes and features
 ~~* Selecting from which version and what policy when pressing "Analyze RC".~~<br>
-* Automatically adding staging to host table.<br>
+~~* Automatically adding staging to host table.~~<br>
 ~~* Search hostnames in API match target.~~<br>
 * Listing exceptions from WAF rules.<br>
 * Use of local certificate to check internal git raw files.<br>
