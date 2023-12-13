@@ -1,9 +1,9 @@
 ### Fixes & features: 
 #### __version__ 0.3.0
-New functionalities under the Hostnames tab:<br>
+- New functionalities under the Hostnames tab:<br>
   - The **Check Property Hostname** button will check and display the “Edge Hostname” for the selected “Property Hostname”. <br>It will also display the staging IP and staging “Edge Hostname”, and create a new button called **Set Staging**.<br>
   - The **Set Staging** button will set up the (staging-ip hostname) to the local host table, asking for write credentials in the process.<br>
-The **Set Staging** button has been removed from the Host table tab. <br>The right window will automatically display when the tab is open or when the “Modify Hosts File” or “Reverse Changes” buttons are used.
+- The **Set Staging** button has been removed from the Host table tab. <br>The right window will automatically display when the tab is open or when the “Modify Hosts File” or “Reverse Changes” buttons are used.
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
@@ -135,7 +135,7 @@ The versioning of this tool follows the format ____version____ = "x.y.z", where:
 
 ### Changelog
 #### __version__ 0.2.1
-- View Readme is showind proper HTML format
+- View Readme is showing proper HTML format
 #### __version__ 0.2.0
 - Two new features have been introduced to the Analyze RC:.<br>
   - A selection window will appear if there are more than 50 versions, allowing you to choose the starting version for analysis..<br>
