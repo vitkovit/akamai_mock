@@ -3,7 +3,7 @@
 - New functionalities under the **Hostnames** tab:<br>
   - The **Check Property Hostname** button will check and display the “Edge Hostname” for the selected “Property Hostname”. <br>It will also display the staging IP and staging “Edge Hostname”, and create a new button called **Set Staging**.<br>
   - The **Set Staging** button will set up the (staging-ip hostname) to the local host table, asking for write credentials in the process.<br>
-- The **Set Staging** button has been removed from the Host table tab. <br>The right window will automatically display when the tab is open or when the “Modify Hosts File” or “Reverse Changes” buttons are used.
+- The **Display Hosts File** button has been removed from the Host table tab. <br>The right window will automatically display when the tab is open or when the “Modify Hosts File” or “Reverse Changes” buttons are used.
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
