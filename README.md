@@ -1,9 +1,9 @@
 ### Fixes & features: 
-#### __version__ 0.3.0
-- New functionalities under the **Hostnames** tab:<br>
-  - The **Check Property Hostname** button will check and display the “Edge Hostname” for the selected “Property Hostname”. <br>It will also display the staging IP and staging “Edge Hostname”, and create a new button called **Set Staging**.<br>
-  - The **Set Staging** button will set up the (staging-ip hostname) to the local host table, asking for write credentials in the process.<br>
-- The **Display Hosts File** button has been removed from the Host table tab. <br>The right window will automatically display when the tab is open or when the “Modify Hosts File” or “Reverse Changes” buttons are used.
+#### __version__ 0.3.1
+- **Check Property Hostname** button can now check hostname for properties active only on staging
+
+## Download Script alternative
+[Google Drive](https://drive.google.com/file/d/1GeFGbrmGl_RxazLCneUSPiz9VHhuPG9G/view?usp=drive_link)
 
 ## Prerequisites 
 Active API credentials. To create API credentials, go to:<br>
@@ -24,6 +24,7 @@ client_token = akab-xxxxxxxxxxxxxxxxxxx<br>
 If you use a different API Section, make sure you change the content of the _version.py_ file - modify variable ___apisection___ to the name of your API Section.
 
 More info can be found on  [TechDocs](https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials)
+
 
 ## How to Install and Run script - MAC users 
 ### Option 1:
@@ -134,6 +135,11 @@ The versioning of this tool follows the format ____version____ = "x.y.z", where:
 - **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
 
 ### Changelog
+#### __version__ 0.3.0
+- New functionalities under the **Hostnames** tab:<br>
+  - The **Check Property Hostname** button will check and display the “Edge Hostname” for the selected “Property Hostname”. <br>It will also display the staging IP and staging “Edge Hostname”, and create a new button called **Set Staging**.<br>
+  - The **Set Staging** button will set up the (staging-ip hostname) to the local host table, asking for write credentials in the process.<br>
+- The **Display Hosts File** button has been removed from the Host table tab. <br>The right window will automatically display when the tab is open or when the “Modify Hosts File” or “Reverse Changes” buttons are used.
 #### __version__ 0.2.1
 - View Readme is showing proper HTML format
 #### __version__ 0.2.0
