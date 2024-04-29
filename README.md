@@ -1,6 +1,6 @@
 ### Fixes & features: 
 #### __version__ 0.3.2
-- **python3.12 support** requerements and instalation is set to support python3.12
+- **python3.12 support** requirements and installation are set to support python3.12
 - **UI instalation disabled** install.command does not work with "PMC Policies Information"
 
 ## Download Script alternative
