@@ -1,6 +1,7 @@
 ### Fixes & features: 
-#### __version__ 0.3.1
-- **Check Property Hostname** button can now check hostname for properties active only on staging
+#### __version__ 0.3.2
+- **python3.12 support** requerements and instalation is set to support python3.12
+- **UI instalation disabled** install.command does not work with "PMC Policies Information"
 
 ## Download Script alternative
 [Google Drive](https://drive.google.com/file/d/1GeFGbrmGl_RxazLCneUSPiz9VHhuPG9G/view?usp=drive_link)
@@ -27,7 +28,7 @@ More info can be found on  [TechDocs](https://techdocs.akamai.com/developer/docs
 
 
 ## How to Install and Run script - MAC users 
-### Option 1:
+### Option 1: (not working with "PMC Policies Information")
 Open _install.command_ with terminal (Terminal should be default selection). If not:<br>
 two finger click on file -> Open With -> Other… -> Applications -> Utilities (scroll to the bottom of screen) -> Enable: All Applications -> Terminal (set as default)
 
@@ -135,6 +136,8 @@ The versioning of this tool follows the format ____version____ = "x.y.z", where:
 - **z**: This number changes when there are fixes and changes to the source code. This represents patches or bug fixes.<br>
 
 ### Changelog
+#### __version__ 0.3.1
+- **Check Property Hostname** button can now check hostname for properties active only on staging
 #### __version__ 0.3.0
 - New functionalities under the **Hostnames** tab:<br>
   - The **Check Property Hostname** button will check and display the “Edge Hostname” for the selected “Property Hostname”. <br>It will also display the staging IP and staging “Edge Hostname”, and create a new button called **Set Staging**.<br>
